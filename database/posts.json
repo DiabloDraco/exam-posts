@@ -1,0 +1,25 @@
+[
+    {
+        "title": "dadadadadda",
+        "text": "kaneshnaaaaa",
+        "description": "wdkjafkslkaflkngweaklfjalwegknlwagnklklfwaeklm",
+        "dateY": "13-03-2023",
+        "dateH": "14-00",
+        "category": "fawfklasngfaklsk",
+        "subcategory": "dadadadad",
+        "type": "online",
+        "postImg": "16723760266842022-12-01_11-02.png",
+        "isDeleted": false,
+        "status": "active",
+        "count": 1,
+        "postId": 1,
+        "user": {
+            "fullname": "Mirmuhsin Mirahmatov  ",
+            "phone": "+998958006151",
+            "job": "dawpdkafal"
+        },
+        "watched": [
+            "::1"
+        ]
+    }
+]
