@@ -72,7 +72,7 @@ export let GETPOST = (req, res) => {
             let postDate = dateY ? post.dateY == dateY : true
             let postFullName = fullname ? post.user.fullname == fullname : true
 
-            return postCategory && postType && postDate && postFullName
+            return postCategory || postType || postDate || postFullName
         })
 
         for (const q of querryResult) {
@@ -89,8 +89,8 @@ export let GETPOST = (req, res) => {
 export let GETINNERPOST = (req, res) => {
     try {
         let { postId } = req.params
-        let ip = req.connection.remoteAddress
-
+        let ip = req.ip
+        
         let posts = read("posts")
 
         let findedPost = posts.find(post => post.postId == postId)

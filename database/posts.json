@@ -11,7 +11,7 @@
         "postImg": "16723760266842022-12-01_11-02.png",
         "isDeleted": false,
         "status": "active",
-        "count": 1,
+        "count": 7,
         "postId": 1,
         "user": {
             "fullname": "Mirmuhsin Mirahmatov  ",
@@ -19,7 +19,13 @@
             "job": "dawpdkafal"
         },
         "watched": [
-            "::1"
+            "::1",
+            [],
+            [],
+            [],
+            [],
+            null,
+            null
         ]
     }
 ]
