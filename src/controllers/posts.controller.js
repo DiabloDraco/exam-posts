@@ -89,7 +89,7 @@ export let GETPOST = (req, res) => {
 export let GETINNERPOST = (req, res) => {
     try {
         let { postId } = req.params
-        let { ip } = req
+        let ip = req.connection.remoteAddress
 
         let posts = read("posts")
 
