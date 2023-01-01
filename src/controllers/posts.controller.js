@@ -1,6 +1,8 @@
 import { read, write } from "../utils/model.js";
 import fs from "fs"
 import path from "path";
+import moment from "moment"
+moment.locale("uz-latn")
 
 export let NEWPOST = (req, res) => {
     try {
@@ -44,7 +46,8 @@ export let NEWPOST = (req, res) => {
                 phone,
                 job
             },
-            watched: []
+            watched: [],
+            created_at: moment(Date.now()).format("LLL")
         }
 
         posts.push(newPost)

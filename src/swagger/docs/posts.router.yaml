@@ -1,0 +1,30 @@
+/getposts:
+  get:
+    tags:
+      - posts
+    responses:
+      '200':  
+        description: admin info
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/postGet'
+
+/post:
+  post:
+    tags:
+      - posts
+    requestBody:
+      decription: add post
+      content: 
+        multipart/form-data:
+          schema:
+            $ref: '#/components/schemas/addPost'
+      required: true
+    responses:
+      '201':  
+        description: admin
+        content:
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/addPost'
