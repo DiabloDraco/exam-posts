@@ -9,7 +9,7 @@ posts.post("/post" , POST , NEWPOST)
 
 posts.get("/getposts" , GETPOST)
 
-posts.get("/getPost/:postId" , GETINNERPOST)
+posts.get("/getpost/:postId" , GETINNERPOST)
 
 posts.get('/getImg/:imgName' , GETIMAGE)
 

@@ -10,7 +10,7 @@
             schema:
               $ref: "#/components/schemas/SubcategoryGet"
 
-/fullname/{postId}:
+/fullname:
   get:
     tags:
       - fullname:
