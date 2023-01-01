@@ -29,10 +29,10 @@
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/admins'          
+                $ref: '#/components/schemas/postGet'          
             application/xml:
               schema:
-                $ref: '#/components/schemas/admins'
+                $ref: '#/components/schemas/postGet'
         '400':
           description: Invalid ID supplied
         '404':
@@ -52,10 +52,10 @@
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/admins'          
+                $ref: '#/components/schemas/postGet'          
             application/xml:
               schema:
-                $ref: '#/components/schemas/admins'
+                $ref: '#/components/schemas/postGet'
         '400':
           description: Invalid ID supplied
         '404':
@@ -75,10 +75,10 @@
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/admins'          
+                $ref: '#/components/schemas/postGet'          
             application/xml:
               schema:
-                $ref: '#/components/schemas/admins'
+                $ref: '#/components/schemas/postGet'
         '400':
           description: Invalid ID supplied
         '404':

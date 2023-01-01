@@ -9,7 +9,7 @@ components:
           type: string
         password: 
           type: string
-    admins:
+    response:
       type: Object
       properties:
         admin_id:
