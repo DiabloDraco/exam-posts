@@ -28,3 +28,6 @@ components:
               type: string 
             data:
               type: object
+    getImg:
+      content:  
+        application/json: 

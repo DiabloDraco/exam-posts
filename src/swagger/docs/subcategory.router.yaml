@@ -3,21 +3,53 @@
     tags:
       - subCategory
     responses:
-      '200':  
+      "200":
         description: all subCategory
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/SubcategoryGet'
+              $ref: "#/components/schemas/SubcategoryGet"
 
-/fullname:
+/fullname/{postId}:
   get:
     tags:
       - fullname:
     responses:
-      '200':  
+      "200":
         description: all fullnames
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/fullNameGet'
+              $ref: "#/components/schemas/fullNameGet"
+/getImg/{imageName}:
+  get:
+    tags:
+      - getImg:
+    operationAdminId: imageName
+    parameters:
+      - name: imageName
+        in: path
+    required: true
+    responses:
+      "200":
+        description: get Image
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/getImg"
+/download/{imageName}:
+  get:
+    tags:
+      - getImg:
+    operationAdminId: imageName
+    parameters:
+      - name: imageName
+        in: path
+    required: true
+    responses:
+      "200":
+        description: get Image
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/getImg"
