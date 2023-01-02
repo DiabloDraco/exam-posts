@@ -17,7 +17,16 @@ const swaggerDocs = swaggerJSDoc({
             default: PORT,
           },
         },
-      }
+      },
+      {
+        url: `https://exam-posts.onrender.com`,
+        variables: {
+          port: {
+            enum: [PORT],
+            default: PORT,
+          },
+        },
+      },
     ],
 
     info: {
